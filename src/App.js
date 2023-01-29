@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Inscription from "./pages/Inscription";
 import ListeEnchere from "./pages/ListeEnchere";
+import { ListProducts } from "./pages/Products/ListProducts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="home" element={ <Home /> } />
           <Route path="/liste-enchere" element={ <ListeEnchere /> } />
         </Route>
+        <Route path="/liste" element={<ListProducts/>}  />
       </Routes>
     </BrowserRouter>
   );
